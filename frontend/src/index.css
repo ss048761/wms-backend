@@ -1,0 +1,18 @@
+/* D:\WMS\frontend\src\index.css */
+
+/* Keep your existing Tailwind directives at the top */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility to hide scrollbars */
+/* We place it inside @layer utilities so Tailwind can process it appropriately */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for WebKit browsers like Chrome, Safari, Edge */
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* Hides scrollbar for IE and older Edge */
+    scrollbar-width: none;  /* Hides scrollbar for Firefox */
+  }
+}
