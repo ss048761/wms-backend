@@ -12,6 +12,7 @@ from rest_framework_simplejwt.views import (
 
 
 urlpatterns = [
+    path('api/v1/auth/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('admin/', admin.site.urls),
 
     # JWT Token Endpoints
