@@ -9,7 +9,7 @@ from rest_framework_simplejwt.views import (
     TokenVerifyView,
 )
 # Import your custom view from the wms app
-from wms.views import MyTokenObtainPairView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
