@@ -1,6 +1,7 @@
 # D:\WMS\backend\urls.py
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework_simplejwt.views import TokenObtainPairView
 
 # Remove the direct import of TokenObtainPairView from simplejwt.views
 from rest_framework_simplejwt.views import (
